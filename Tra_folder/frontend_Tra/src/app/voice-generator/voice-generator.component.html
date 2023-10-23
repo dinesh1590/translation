@@ -1,0 +1,8 @@
+<div *ngIf="!responseString">
+    <input type="file" (change)="onFileSelected($event)" accept=".xlsx" />
+    <button (click)="uploadExcel()">Upload Excel</button>
+  </div>
+  <div class="abc" *ngIf="responseString">
+    <!-- Display the image when responseString is available -->
+    <img src="https://img.freepik.com/free-vector/halloween-background-with-old-cemetery-gravestones-spooky-leafless-trees-full-moon-night-sky-realistic-illustration_1284-65419.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697932800&semt=sph" alt="Your Image">
+  </div>
